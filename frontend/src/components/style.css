@@ -1,0 +1,88 @@
+#card{
+    transition: transform 500ms ease;
+   
+}
+#card:hover{
+    /* transform: scale(1.1,1.1); */
+    transform: translateY(-15px);
+}
+
+button:focus{
+    border:none;
+}
+#add_to_cart_toast{
+    animation-name: side_incart;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    
+}
+
+#new_item_tost{
+        animation-name: side_in;
+        animation-duration: 1s;
+        animation-timing-function: ease;
+
+    }
+@keyframes side_in{
+    from{
+       transform: translateY(-400px);
+        opacity: 0;
+       
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+       
+    }
+}
+@keyframes side_out {
+    from {
+        transform: translateY(0);
+        
+
+    }
+
+    to {
+        
+        transform: translateY(-400px);
+    }
+}
+
+@keyframes side_incart {
+    from {
+        transform: translateY(400px);
+        opacity: 0;
+
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+
+    }
+}
+
+@keyframes side_outcart {
+    from {
+        transform: translateY(0);
+
+
+    }
+
+    to {
+
+        transform: translateY(400px);
+    }
+}
+#change_quantity button:focus{
+        border: 1px solid #ca8a04;
+}
+#order_confirm button:focus{
+    /* border: 1px solid #ff0000; */
+    border: 1px solid black;
+}
+#order button:focus {
+    /* border: 1px solid #ff0000; */
+    border: 1px solid black;
+}
+
